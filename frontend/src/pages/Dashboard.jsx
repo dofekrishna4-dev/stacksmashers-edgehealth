@@ -7,6 +7,8 @@ import CaregiverInsightPanel from "../components/CaregiverInsightPanel";
 import RiskPanel from "../components/RiskPanel";
 import PredictedRiskPanel from "../components/PredictedRiskPanel";
 
+const API_BASE = "https://stacksmashers-edgehealth.onrender.com";
+
 export default function Dashboard() {
   const [patient, setPatient] = useState({ name: "", age: "", gender: "", patientId: "" });
   const [submitted, setSubmitted] = useState(false);
@@ -20,13 +22,13 @@ export default function Dashboard() {
 
     async function fetchData() {
       try {
-        const predRes = await fetch(`http://127.0.0.1:8000/prediction?patient_id=${patient.patientId}`);
+        const predRes = await fetch(`${API_BASE}/prediction?patient_id=${patient.patientId}`);
         const predData = await predRes.json();
 
-        const twinRes = await fetch(`http://127.0.0.1:8000/digital-twin?patient_id=${patient.patientId}`);
+        const twinRes = await fetch(`${API_BASE}/digital-twin?patient_id=${patient.patientId}`);
         const twinData = await twinRes.json();
 
-        const simRes = await fetch(`http://127.0.0.1:8000/simulation?patient_id=${patient.patientId}`);
+        const simRes = await fetch(`${API_BASE}/simulation?patient_id=${patient.patientId}`);
         const simData = await simRes.json();
 
         setPrediction(predData);

@@ -3,11 +3,6 @@
 🔗 **[Live demo](https://stacksmashers-edgehealth.vercel.app)**
 
 Edge AI healthcare monitoring system for real-time respiratory and motor health tracking.
-...
-
-# EdgeHealth Orchestrator
-
-Edge AI healthcare monitoring system for real-time respiratory and motor health tracking.
 
 A caregiver-facing dashboard that turns raw patient telemetry into synthesised, actionable insight — built for non-specialist caregivers rather than clinicians.
 

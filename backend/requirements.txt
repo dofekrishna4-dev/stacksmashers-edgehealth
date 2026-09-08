@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+pydantic
+sqlalchemy
+psycopg2-binary
+langchain
+chromadb
+tensorflow
+scikit-learn
+xgboost
+lightgbm
+flwr
+pytest

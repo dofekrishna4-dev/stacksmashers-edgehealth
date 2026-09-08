@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  background: #05070d;
+  color: #eef1fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.meta-label {
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.chart-card {
+  background: transparent;
+}
+
+.chart-title {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #96a0c0;
+  margin-bottom: 6px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a2338;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}

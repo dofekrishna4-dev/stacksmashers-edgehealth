@@ -1,0 +1,65 @@
+{
+  "results": {
+    "random_forest": {
+      "accuracy": 0.9933,
+      "precision": 0.9836,
+      "recall": 1.0,
+      "f1": 0.9917,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          178,
+          2
+        ],
+        [
+          0,
+          120
+        ]
+      ],
+      "n_train": 900,
+      "n_test": 300
+    },
+    "gradient_boosting": {
+      "accuracy": 0.9967,
+      "precision": 0.9917,
+      "recall": 1.0,
+      "f1": 0.9959,
+      "roc_auc": 0.9972,
+      "confusion_matrix": [
+        [
+          179,
+          1
+        ],
+        [
+          0,
+          120
+        ]
+      ],
+      "n_train": 900,
+      "n_test": 300
+    },
+    "consensus_ensemble": {
+      "accuracy": 0.9967,
+      "precision": 0.9917,
+      "recall": 1.0,
+      "f1": 0.9959,
+      "roc_auc": 1.0
+    }
+  },
+  "feature_importance": {
+    "hr_mean": 0.0072,
+    "hr_std": 0.0464,
+    "hr_dev_from_baseline": 0.2069,
+    "spo2_mean": 0.0214,
+    "spo2_min": 0.0283,
+    "spo2_dev_from_baseline": 0.2261,
+    "resp_rate_mean": 0.0529,
+    "resp_rate_std": 0.134,
+    "resp_rate_dev_from_baseline": 0.1463,
+    "tremor_band_power": 0.0071,
+    "tremor_dominant_freq": 0.0003,
+    "activity_level": 0.0007,
+    "activity_dev_from_baseline": 0.122,
+    "breath_tremor_correlation": 0.0004
+  }
+}

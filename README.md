@@ -21,10 +21,6 @@ A caregiver-facing dashboard that turns raw patient telemetry into synthesised, 
 - **Backend**: FastAPI, SQLAlchemy, LangChain, ChromaDB
 - **ML**: scikit-learn (Random Forest, Gradient Boosting), synthetic data generation, TFLite export
 
-## Project structure
-
-## Running locally
-
 ### Backend
 
 ```bash

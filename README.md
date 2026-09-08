@@ -85,12 +85,7 @@ engine doesn't just cry wolf" now has a concrete, tested answer.
 | Real BLE mesh radios | `edge/mesh/federated_swarm.py` (`BLEMeshTransport`) | nRF52840/ESP32 hardware — the sync protocol itself (FedAvg-style peer averaging) is implemented and tested against a simulated transport |
 | PostgreSQL persistence | `database/schema.sql`, `backend/app/models/db_models.py` | A running Postgres instance — `docker-compose up` in `deployment/` stands one up; the ORM models are written and importable but not exercised against a live DB here |
 
-## Recommended next 4 hours if extending this for the actual hackathon
 
-1. Swap the synthetic dataset for a public one (PhysioNet, WESAD) — the `features.py` interface doesn't need to change.
-2. Get `pip install tensorflow` running somewhere with network access and run `ml/export_tflite.py` to produce a real `.tflite` file — that's the single highest-value missing artifact for a "runs on a microcontroller" demo.
-3. `npm install` the frontend and point `VITE_API_BASE_URL` at a running `uvicorn app.main:app` — both sides are already wired to the same JSON contract in `docs/API_DESIGN.md`.
-4. Replace `RAGService.explain()`'s template step with a real local LLM call — retrieval is already correct, only the generation step is templated.
 
 
 ### Backend
